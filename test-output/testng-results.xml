@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="6" ignored="6" total="74" passed="56" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-18T11:51:11 IST" name="TTA Bank Regression" finished-at="2026-11-18T11:55:14 IST" duration-ms="242421">
+    <groups>
+      <group name="security">
+        <method signature="LoginTests.tc011_sqlInjectionIsRejected()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc011_sqlInjectionIsRejected" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc012_dashboardRequiresLogin()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc012_dashboardRequiresLogin" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="SessionAndUiTests.extra_protectedPagesRequireSession()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="extra_protectedPagesRequireSession" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="SessionAndUiTests.tc044_dataIsolationBetweenAccounts()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc044_dataIsolationBetweenAccounts" class="com.tta.bank.tests.SessionAndUiTests"/>
+      </group> <!-- security -->
+      <group name="negative">
+        <method signature="LoginTests.tc001_signInWithEmptyFields()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc001_signInWithEmptyFields" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc003_validEmailInvalidPassword()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc003_validEmailInvalidPassword" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc004_unregisteredEmail()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc004_unregisteredEmail" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc005_invalidEmailFormat()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc005_invalidEmailFormat" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc006_emptyPassword()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc006_emptyPassword" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc008_passwordIsCaseSensitive()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc008_passwordIsCaseSensitive" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc011_sqlInjectionIsRejected()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc011_sqlInjectionIsRejected" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="QrPaymentTests.tc037_invalidQrAmount(java.lang.String)[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" name="tc037_invalidQrAmount" class="com.tta.bank.tests.QrPaymentTests"/>
+        <method signature="RegistrationTests.extra_nameTooShort(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_nameTooShort" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.extra_passwordMismatch()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_passwordMismatch" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.extra_passwordTooShort()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_passwordTooShort" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.extra_phoneMustBeTenDigits(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_phoneMustBeTenDigits" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc015_registerWithEmptyForm()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc015_registerWithEmptyForm" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc016_registerWithInvalidEmail()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc016_registerWithInvalidEmail" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc017_registerWithDuplicateEmail()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc017_registerWithDuplicateEmail" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="SendMoneyTests.tc023_transferWithoutBeneficiary()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc023_transferWithoutBeneficiary" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc024_transferWithEmptyAmount()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc024_transferWithEmptyAmount" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc025_026_zeroAndNegativeAmountRejected(java.lang.String,java.lang.String)[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc025_026_zeroAndNegativeAmountRejected" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc027_nonNumericAmount()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc027_nonNumericAmount" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc028_amountGreaterThanBalance()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc028_amountGreaterThanBalance" class="com.tta.bank.tests.SendMoneyTests"/>
+      </group> <!-- negative -->
+      <group name="ui">
+        <method signature="SessionAndUiTests.tc045_mobileViewport()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc045_mobileViewport" class="com.tta.bank.tests.SessionAndUiTests"/>
+      </group> <!-- ui -->
+      <group name="accessibility">
+        <method signature="SessionAndUiTests.tc046_keyboardNavigationOnLogin()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc046_keyboardNavigationOnLogin" class="com.tta.bank.tests.SessionAndUiTests"/>
+      </group> <!-- accessibility -->
+      <group name="regression">
+        <method signature="LoginTests.tc001_signInWithEmptyFields()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc001_signInWithEmptyFields" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc002_signInWithValidCredentials()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc002_signInWithValidCredentials" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc003_validEmailInvalidPassword()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc003_validEmailInvalidPassword" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc004_unregisteredEmail()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc004_unregisteredEmail" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc005_invalidEmailFormat()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc005_invalidEmailFormat" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc006_emptyPassword()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc006_emptyPassword" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc007_passwordFieldIsMasked()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc007_passwordFieldIsMasked" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc008_passwordIsCaseSensitive()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc008_passwordIsCaseSensitive" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc009_signInWithEnterKey()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc009_signInWithEnterKey" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc010_openAnAccountLink()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc010_openAnAccountLink" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc011_sqlInjectionIsRejected()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc011_sqlInjectionIsRejected" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc012_dashboardRequiresLogin()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc012_dashboardRequiresLogin" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="QrPaymentTests.tc034_qrCodeIsDisplayed()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" name="tc034_qrCodeIsDisplayed" class="com.tta.bank.tests.QrPaymentTests"/>
+        <method signature="QrPaymentTests.tc035_markAsPaidFlow()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" name="tc035_markAsPaidFlow" class="com.tta.bank.tests.QrPaymentTests"/>
+        <method signature="QrPaymentTests.tc036_markAsPaidNotAppliedTwice()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" name="tc036_markAsPaidNotAppliedTwice" class="com.tta.bank.tests.QrPaymentTests"/>
+        <method signature="QrPaymentTests.tc037_invalidQrAmount(java.lang.String)[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" name="tc037_invalidQrAmount" class="com.tta.bank.tests.QrPaymentTests"/>
+        <method signature="RegistrationTests.extra_nameTooShort(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_nameTooShort" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.extra_passwordMismatch()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_passwordMismatch" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.extra_passwordTooShort()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_passwordTooShort" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.extra_phoneMustBeTenDigits(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_phoneMustBeTenDigits" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.extra_welcomeBonusInLedger()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="extra_welcomeBonusInLedger" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc013_registerWithValidDetails()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc013_registerWithValidDetails" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc014_openingBalanceIs50000()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc014_openingBalanceIs50000" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc015_registerWithEmptyForm()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc015_registerWithEmptyForm" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc016_registerWithInvalidEmail()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc016_registerWithInvalidEmail" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc017_registerWithDuplicateEmail()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc017_registerWithDuplicateEmail" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc019_signInLink()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc019_signInLink" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="SendMoneyTests.extra_cancelDoesNotDebit()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="extra_cancelDoesNotDebit" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.extra_dashboardReflectsTransfer()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="extra_dashboardReflectsTransfer" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc020_savedBeneficiariesList()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc020_savedBeneficiariesList" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc021_successfulTransfer()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc021_successfulTransfer" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc022_transferRecordedInLedger()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc022_transferRecordedInLedger" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc023_transferWithoutBeneficiary()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc023_transferWithoutBeneficiary" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc024_transferWithEmptyAmount()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc024_transferWithEmptyAmount" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc025_026_zeroAndNegativeAmountRejected(java.lang.String,java.lang.String)[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc025_026_zeroAndNegativeAmountRejected" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc027_nonNumericAmount()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc027_nonNumericAmount" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc028_amountGreaterThanBalance()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc028_amountGreaterThanBalance" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc029_decimalAmount()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc029_decimalAmount" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc030_twoConsecutiveTransfers()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc030_twoConsecutiveTransfers" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc031_balancePersistsAfterReload()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc031_balancePersistsAfterReload" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc032_doubleClickDebitsOnce()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc032_doubleClickDebitsOnce" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SessionAndUiTests.extra_protectedPagesRequireSession()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="extra_protectedPagesRequireSession" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="SessionAndUiTests.extra_sidebarNavigation()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="extra_sidebarNavigation" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="SessionAndUiTests.tc042_logout()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc042_logout" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="SessionAndUiTests.tc043_sessionPersistsAfterReload()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc043_sessionPersistsAfterReload" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="SessionAndUiTests.tc044_dataIsolationBetweenAccounts()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc044_dataIsolationBetweenAccounts" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="SessionAndUiTests.tc045_mobileViewport()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc045_mobileViewport" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="SessionAndUiTests.tc046_keyboardNavigationOnLogin()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc046_keyboardNavigationOnLogin" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="TransactionsTests.extra_categoryFilterAndReset()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" name="extra_categoryFilterAndReset" class="com.tta.bank.tests.TransactionsTests"/>
+        <method signature="TransactionsTests.tc038_allTransactionsListed()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" name="tc038_allTransactionsListed" class="com.tta.bank.tests.TransactionsTests"/>
+        <method signature="TransactionsTests.tc039_filterByType()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" name="tc039_filterByType" class="com.tta.bank.tests.TransactionsTests"/>
+        <method signature="TransactionsTests.tc040_searchByKeyword()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" name="tc040_searchByKeyword" class="com.tta.bank.tests.TransactionsTests"/>
+        <method signature="TransactionsTests.tc041_ledgerReconcilesWithBalance()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" name="tc041_ledgerReconcilesWithBalance" class="com.tta.bank.tests.TransactionsTests"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTests.tc002_signInWithValidCredentials()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc002_signInWithValidCredentials" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc007_passwordFieldIsMasked()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc007_passwordFieldIsMasked" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc010_openAnAccountLink()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc010_openAnAccountLink" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="LoginTests.tc012_dashboardRequiresLogin()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" name="tc012_dashboardRequiresLogin" class="com.tta.bank.tests.LoginTests"/>
+        <method signature="QrPaymentTests.tc034_qrCodeIsDisplayed()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" name="tc034_qrCodeIsDisplayed" class="com.tta.bank.tests.QrPaymentTests"/>
+        <method signature="QrPaymentTests.tc035_markAsPaidFlow()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" name="tc035_markAsPaidFlow" class="com.tta.bank.tests.QrPaymentTests"/>
+        <method signature="RegistrationTests.tc013_registerWithValidDetails()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc013_registerWithValidDetails" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="RegistrationTests.tc014_openingBalanceIs50000()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" name="tc014_openingBalanceIs50000" class="com.tta.bank.tests.RegistrationTests"/>
+        <method signature="SendMoneyTests.tc020_savedBeneficiariesList()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc020_savedBeneficiariesList" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc021_successfulTransfer()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc021_successfulTransfer" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SendMoneyTests.tc022_transferRecordedInLedger()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" name="tc022_transferRecordedInLedger" class="com.tta.bank.tests.SendMoneyTests"/>
+        <method signature="SessionAndUiTests.tc042_logout()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc042_logout" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="SessionAndUiTests.tc043_sessionPersistsAfterReload()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" name="tc043_sessionPersistsAfterReload" class="com.tta.bank.tests.SessionAndUiTests"/>
+        <method signature="TransactionsTests.tc038_allTransactionsListed()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" name="tc038_allTransactionsListed" class="com.tta.bank.tests.TransactionsTests"/>
+        <method signature="TransactionsTests.tc041_ledgerReconcilesWithBalance()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" name="tc041_ledgerReconcilesWithBalance" class="com.tta.bank.tests.TransactionsTests"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-11-18T11:51:11 IST" name="TTA Bank - UI Regression" finished-at="2026-11-18T11:55:14 IST" duration-ms="242421">
+      <class name="com.tta.bank.tests.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:11 IST" name="setUp" finished-at="2026-11-18T11:51:19 IST" duration-ms="8196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc001_signInWithEmptyFields()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:19 IST" name="tc001_signInWithEmptyFields" description="TC_001 | Sign in button without entering Email Address and Password" finished-at="2026-11-18T11:51:24 IST" duration-ms="4170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_signInWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:24 IST" name="tearDown" finished-at="2026-11-18T11:51:24 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:24 IST" name="setUp" finished-at="2026-11-18T11:51:26 IST" duration-ms="1807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc002_signInWithValidCredentials()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:26 IST" name="tc002_signInWithValidCredentials" description="TC_002 | Sign in with valid credentials lands on dashboard with balance" finished-at="2026-11-18T11:51:37 IST" duration-ms="11852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_signInWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:37 IST" name="tearDown" finished-at="2026-11-18T11:51:38 IST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:38 IST" name="setUp" finished-at="2026-11-18T11:51:40 IST" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc003_validEmailInvalidPassword()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:40 IST" name="tc003_validEmailInvalidPassword" description="TC_003 | Valid Email Address with invalid password" finished-at="2026-11-18T11:51:48 IST" duration-ms="7903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003_validEmailInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:48 IST" name="tearDown" finished-at="2026-11-18T11:51:48 IST" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:48 IST" name="setUp" finished-at="2026-11-18T11:51:50 IST" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc004_unregisteredEmail()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:50 IST" name="tc004_unregisteredEmail" description="TC_004 | Unregistered Email Address with valid password" finished-at="2026-11-18T11:51:54 IST" duration-ms="4015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc004_unregisteredEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:54 IST" name="tearDown" finished-at="2026-11-18T11:51:54 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:54 IST" name="setUp" finished-at="2026-11-18T11:51:56 IST" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc005_invalidEmailFormat()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:56 IST" name="tc005_invalidEmailFormat" description="TC_005 | Invalid Email Address format" finished-at="2026-11-18T11:51:59 IST" duration-ms="2671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc005_invalidEmailFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:59 IST" name="tearDown" finished-at="2026-11-18T11:51:59 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:51:59 IST" name="setUp" finished-at="2026-11-18T11:52:00 IST" duration-ms="1318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc006_emptyPassword()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:00 IST" name="tc006_emptyPassword" description="TC_006 | Valid Email Address and empty password" finished-at="2026-11-18T11:52:09 IST" duration-ms="9417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006_emptyPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:09 IST" name="tearDown" finished-at="2026-11-18T11:52:10 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:10 IST" name="setUp" finished-at="2026-11-18T11:52:11 IST" duration-ms="1670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc007_passwordFieldIsMasked()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:11 IST" name="tc007_passwordFieldIsMasked" description="TC_007 | Password field masks the characters" finished-at="2026-11-18T11:52:15 IST" duration-ms="3678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc007_passwordFieldIsMasked -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:15 IST" name="tearDown" finished-at="2026-11-18T11:52:16 IST" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:16 IST" name="setUp" finished-at="2026-11-18T11:52:17 IST" duration-ms="1515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc008_passwordIsCaseSensitive()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:17 IST" name="tc008_passwordIsCaseSensitive" description="TC_008 | Password in different case must fail" finished-at="2026-11-18T11:52:23 IST" duration-ms="5935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc008_passwordIsCaseSensitive -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:23 IST" name="tearDown" finished-at="2026-11-18T11:52:24 IST" duration-ms="811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:24 IST" name="setUp" finished-at="2026-11-18T11:52:25 IST" duration-ms="1338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc009_signInWithEnterKey()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:25 IST" name="tc009_signInWithEnterKey" description="TC_009 | Sign in by pressing the Enter key" finished-at="2026-11-18T11:52:32 IST" duration-ms="6839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc009_signInWithEnterKey -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:32 IST" name="tearDown" finished-at="2026-11-18T11:52:32 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:32 IST" name="setUp" finished-at="2026-11-18T11:52:34 IST" duration-ms="2052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="tc010_openAnAccountLink()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:34 IST" name="tc010_openAnAccountLink" description="TC_010 | &#039;Open an account&#039; link opens the registration page" finished-at="2026-11-18T11:52:38 IST" duration-ms="3522" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL should be register.html expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL should be register.html expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tta.bank.tests.LoginTests.tc010_openAnAccountLink(LoginTests.java:120)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc010_openAnAccountLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:38 IST" name="tearDown" finished-at="2026-11-18T11:52:38 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:38 IST" name="setUp" finished-at="2026-11-18T11:52:40 IST" duration-ms="1559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc010_openAnAccountLink()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:40 IST" name="tc010_openAnAccountLink" description="TC_010 | &#039;Open an account&#039; link opens the registration page" finished-at="2026-11-18T11:52:43 IST" duration-ms="2959" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL should be register.html expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL should be register.html expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tta.bank.tests.LoginTests.tc010_openAnAccountLink(LoginTests.java:120)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc010_openAnAccountLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:44 IST" name="tearDown" finished-at="2026-11-18T11:52:44 IST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:44 IST" name="setUp" finished-at="2026-11-18T11:52:46 IST" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc011_sqlInjectionIsRejected()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:46 IST" name="tc011_sqlInjectionIsRejected" description="TC_011 | Sign in with SQL injection input" finished-at="2026-11-18T11:52:55 IST" duration-ms="8868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc011_sqlInjectionIsRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:55 IST" name="tearDown" finished-at="2026-11-18T11:52:55 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:55 IST" name="setUp" finished-at="2026-11-18T11:52:57 IST" duration-ms="2260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc012_dashboardRequiresLogin()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:52:57 IST" name="tc012_dashboardRequiresLogin" description="TC_012 | Dashboard cannot be opened without signing in" finished-at="2026-11-18T11:53:00 IST" duration-ms="3083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc012_dashboardRequiresLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.LoginTests@2d1ef81a]" started-at="2026-11-18T11:53:00 IST" name="tearDown" finished-at="2026-11-18T11:53:01 IST" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tta.bank.tests.LoginTests -->
+      <class name="com.tta.bank.tests.SendMoneyTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:11 IST" name="setUp" finished-at="2026-11-18T11:51:19 IST" duration-ms="8081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_cancelDoesNotDebit()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:19 IST" name="extra_cancelDoesNotDebit" description="EXTRA | Cancel in the confirm dialog does not debit" finished-at="2026-11-18T11:51:27 IST" duration-ms="8189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_cancelDoesNotDebit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:27 IST" name="tearDown" finished-at="2026-11-18T11:51:28 IST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:28 IST" name="setUp" finished-at="2026-11-18T11:51:30 IST" duration-ms="2013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_dashboardReflectsTransfer()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:30 IST" name="extra_dashboardReflectsTransfer" description="EXTRA | Dashboard recent list, counters and expense tracker reflect a transfer" finished-at="2026-11-18T11:51:42 IST" duration-ms="12008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_dashboardReflectsTransfer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:42 IST" name="tearDown" finished-at="2026-11-18T11:51:43 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:43 IST" name="setUp" finished-at="2026-11-18T11:51:45 IST" duration-ms="1919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc020_savedBeneficiariesList()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:45 IST" name="tc020_savedBeneficiariesList" description="TC_020 | Saved beneficiaries list shows the five payees" finished-at="2026-11-18T11:51:50 IST" duration-ms="5500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc020_savedBeneficiariesList -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:50 IST" name="tearDown" finished-at="2026-11-18T11:51:52 IST" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:52 IST" name="setUp" finished-at="2026-11-18T11:51:53 IST" duration-ms="1637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="tc021_successfulTransfer()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:51:53 IST" name="tc021_successfulTransfer" description="TC_021 | Successful transfer of Rs 500 reduces the balance by Rs 500" finished-at="2026-11-18T11:52:10 IST" duration-ms="16608" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Success message should be displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Success message should be displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tta.bank.tests.SendMoneyTests.tc021_successfulTransfer(SendMoneyTests.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc021_successfulTransfer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:10 IST" name="tearDown" finished-at="2026-11-18T11:52:11 IST" duration-ms="1034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:11 IST" name="setUp" finished-at="2026-11-18T11:52:13 IST" duration-ms="2124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc021_successfulTransfer()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:13 IST" name="tc021_successfulTransfer" description="TC_021 | Successful transfer of Rs 500 reduces the balance by Rs 500" finished-at="2026-11-18T11:52:26 IST" duration-ms="13269" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Success message should be displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Success message should be displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tta.bank.tests.SendMoneyTests.tc021_successfulTransfer(SendMoneyTests.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc021_successfulTransfer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:27 IST" name="tearDown" finished-at="2026-11-18T11:52:28 IST" duration-ms="947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:28 IST" name="setUp" finished-at="2026-11-18T11:52:29 IST" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc022_transferRecordedInLedger()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:29 IST" name="tc022_transferRecordedInLedger" description="TC_022 | Transfer is recorded as a debit row in the transaction table" finished-at="2026-11-18T11:52:38 IST" duration-ms="9362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc022_transferRecordedInLedger -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:38 IST" name="tearDown" finished-at="2026-11-18T11:52:39 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:39 IST" name="setUp" finished-at="2026-11-18T11:52:41 IST" duration-ms="2346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc023_transferWithoutBeneficiary()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:41 IST" name="tc023_transferWithoutBeneficiary" description="TC_023 | Transfer without selecting a beneficiary" finished-at="2026-11-18T11:52:49 IST" duration-ms="7770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc023_transferWithoutBeneficiary -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:49 IST" name="tearDown" finished-at="2026-11-18T11:52:49 IST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:49 IST" name="setUp" finished-at="2026-11-18T11:52:51 IST" duration-ms="1507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc024_transferWithEmptyAmount()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:51 IST" name="tc024_transferWithEmptyAmount" description="TC_024 | Transfer with an empty amount" finished-at="2026-11-18T11:52:58 IST" duration-ms="7675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc024_transferWithEmptyAmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:58 IST" name="tearDown" finished-at="2026-11-18T11:52:59 IST" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:52:59 IST" name="setUp" finished-at="2026-11-18T11:53:00 IST" duration-ms="1583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc025_026_zeroAndNegativeAmountRejected(java.lang.String,java.lang.String)[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:00 IST" name="tc025_026_zeroAndNegativeAmountRejected" description="TC_025 / TC_026 | Zero and negative amounts are rejected" data-provider="invalidAmounts" finished-at="2026-11-18T11:53:11 IST" duration-ms="10933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC_025 zero]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc025_026_zeroAndNegativeAmountRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:11 IST" name="tearDown" finished-at="2026-11-18T11:53:12 IST" duration-ms="803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:12 IST" name="setUp" finished-at="2026-11-18T11:53:14 IST" duration-ms="2026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc025_026_zeroAndNegativeAmountRejected(java.lang.String,java.lang.String)[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:14 IST" name="tc025_026_zeroAndNegativeAmountRejected" description="TC_025 / TC_026 | Zero and negative amounts are rejected" data-provider="invalidAmounts" finished-at="2026-11-18T11:53:23 IST" duration-ms="8962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC_026 negative]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc025_026_zeroAndNegativeAmountRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:23 IST" name="tearDown" finished-at="2026-11-18T11:53:24 IST" duration-ms="888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:24 IST" name="setUp" finished-at="2026-11-18T11:53:26 IST" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc025_026_zeroAndNegativeAmountRejected(java.lang.String,java.lang.String)[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:26 IST" name="tc025_026_zeroAndNegativeAmountRejected" description="TC_025 / TC_026 | Zero and negative amounts are rejected" data-provider="invalidAmounts" finished-at="2026-11-18T11:53:35 IST" duration-ms="9428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-0.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[negative decimal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc025_026_zeroAndNegativeAmountRejected -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:35 IST" name="tearDown" finished-at="2026-11-18T11:53:35 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:35 IST" name="setUp" finished-at="2026-11-18T11:53:36 IST" duration-ms="1181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc027_nonNumericAmount()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:36 IST" name="tc027_nonNumericAmount" description="TC_027 | Non-numeric amount is rejected or ignored" finished-at="2026-11-18T11:53:45 IST" duration-ms="8933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc027_nonNumericAmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:45 IST" name="tearDown" finished-at="2026-11-18T11:53:46 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:46 IST" name="setUp" finished-at="2026-11-18T11:53:47 IST" duration-ms="1494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc028_amountGreaterThanBalance()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:47 IST" name="tc028_amountGreaterThanBalance" description="TC_028 | Amount greater than the balance is refused" finished-at="2026-11-18T11:53:56 IST" duration-ms="8717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc028_amountGreaterThanBalance -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:56 IST" name="tearDown" finished-at="2026-11-18T11:53:57 IST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:57 IST" name="setUp" finished-at="2026-11-18T11:53:59 IST" duration-ms="2050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc029_decimalAmount()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:53:59 IST" name="tc029_decimalAmount" description="TC_029 | Decimal amount Rs 100.50 is debited exactly" finished-at="2026-11-18T11:54:05 IST" duration-ms="6681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc029_decimalAmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:05 IST" name="tearDown" finished-at="2026-11-18T11:54:06 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:06 IST" name="setUp" finished-at="2026-11-18T11:54:07 IST" duration-ms="1436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc030_twoConsecutiveTransfers()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:07 IST" name="tc030_twoConsecutiveTransfers" description="TC_030 | Balance after two consecutive transfers (200 + 300)" finished-at="2026-11-18T11:54:16 IST" duration-ms="8464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc030_twoConsecutiveTransfers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:16 IST" name="tearDown" finished-at="2026-11-18T11:54:16 IST" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:16 IST" name="setUp" finished-at="2026-11-18T11:54:18 IST" duration-ms="1608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="tc031_balancePersistsAfterReload()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:18 IST" name="tc031_balancePersistsAfterReload" description="TC_031 | Balance and history persist after page reload" finished-at="2026-11-18T11:54:27 IST" duration-ms="8636" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at com.tta.bank.tests.SendMoneyTests.tc031_balancePersistsAfterReload(SendMoneyTests.java:181)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc031_balancePersistsAfterReload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:27 IST" name="tearDown" finished-at="2026-11-18T11:54:29 IST" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:29 IST" name="setUp" finished-at="2026-11-18T11:54:31 IST" duration-ms="1779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc031_balancePersistsAfterReload()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:31 IST" name="tc031_balancePersistsAfterReload" description="TC_031 | Balance and history persist after page reload" finished-at="2026-11-18T11:54:37 IST" duration-ms="6558" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at com.tta.bank.tests.SendMoneyTests.tc031_balancePersistsAfterReload(SendMoneyTests.java:181)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc031_balancePersistsAfterReload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:38 IST" name="tearDown" finished-at="2026-11-18T11:54:38 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:38 IST" name="setUp" finished-at="2026-11-18T11:54:40 IST" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc032_doubleClickDebitsOnce()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:40 IST" name="tc032_doubleClickDebitsOnce" description="TC_032 | Double-clicking &#039;Confirm and send&#039; debits only once" finished-at="2026-11-18T11:54:49 IST" duration-ms="9513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc032_doubleClickDebitsOnce -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SendMoneyTests@7c6908d7]" started-at="2026-11-18T11:54:49 IST" name="tearDown" finished-at="2026-11-18T11:54:50 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tta.bank.tests.SendMoneyTests -->
+      <class name="com.tta.bank.tests.QrPaymentTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:01 IST" name="setUp" finished-at="2026-11-18T11:53:03 IST" duration-ms="1661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc034_qrCodeIsDisplayed()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:03 IST" name="tc034_qrCodeIsDisplayed" description="TC_034 | Dummy QR code and merchant payment details are displayed" finished-at="2026-11-18T11:53:09 IST" duration-ms="6412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc034_qrCodeIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:09 IST" name="tearDown" finished-at="2026-11-18T11:53:10 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:10 IST" name="setUp" finished-at="2026-11-18T11:53:11 IST" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc035_markAsPaidFlow()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:11 IST" name="tc035_markAsPaidFlow" description="TC_035 | Mark as paid debits the balance and logs a transaction" finished-at="2026-11-18T11:53:21 IST" duration-ms="10628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc035_markAsPaidFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:21 IST" name="tearDown" finished-at="2026-11-18T11:53:22 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:22 IST" name="setUp" finished-at="2026-11-18T11:53:23 IST" duration-ms="1139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc036_markAsPaidNotAppliedTwice()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:23 IST" name="tc036_markAsPaidNotAppliedTwice" description="TC_036 | Double-clicking mark as paid records only one debit" finished-at="2026-11-18T11:53:32 IST" duration-ms="8775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc036_markAsPaidNotAppliedTwice -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:32 IST" name="tearDown" finished-at="2026-11-18T11:53:32 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:32 IST" name="setUp" finished-at="2026-11-18T11:53:33 IST" duration-ms="1348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc037_invalidQrAmount(java.lang.String)[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:33 IST" name="tc037_invalidQrAmount" description="TC_037 | QR payment with an invalid amount (0 / -50 / empty)" data-provider="invalidQrAmounts" finished-at="2026-11-18T11:53:39 IST" duration-ms="5906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc037_invalidQrAmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:39 IST" name="tearDown" finished-at="2026-11-18T11:53:39 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:39 IST" name="setUp" finished-at="2026-11-18T11:53:41 IST" duration-ms="1278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc037_invalidQrAmount(java.lang.String)[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:41 IST" name="tc037_invalidQrAmount" description="TC_037 | QR payment with an invalid amount (0 / -50 / empty)" data-provider="invalidQrAmounts" finished-at="2026-11-18T11:53:49 IST" duration-ms="8161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc037_invalidQrAmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:49 IST" name="tearDown" finished-at="2026-11-18T11:53:49 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:49 IST" name="setUp" finished-at="2026-11-18T11:53:51 IST" duration-ms="1340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc037_invalidQrAmount(java.lang.String)[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:51 IST" name="tc037_invalidQrAmount" description="TC_037 | QR payment with an invalid amount (0 / -50 / empty)" data-provider="invalidQrAmounts" finished-at="2026-11-18T11:53:57 IST" duration-ms="6046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc037_invalidQrAmount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.QrPaymentTests@3c9754d8]" started-at="2026-11-18T11:53:57 IST" name="tearDown" finished-at="2026-11-18T11:53:57 IST" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tta.bank.tests.QrPaymentTests -->
+      <class name="com.tta.bank.tests.RegistrationTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:11 IST" name="setUp" finished-at="2026-11-18T11:51:19 IST" duration-ms="8201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_nameTooShort(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:19 IST" name="extra_nameTooShort" description="EXTRA | Full name shorter than 3 characters is rejected" data-provider="badNames" finished-at="2026-11-18T11:51:23 IST" duration-ms="3874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Al]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_nameTooShort -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:23 IST" name="tearDown" finished-at="2026-11-18T11:51:24 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:24 IST" name="setUp" finished-at="2026-11-18T11:51:26 IST" duration-ms="2184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_nameTooShort(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:26 IST" name="extra_nameTooShort" description="EXTRA | Full name shorter than 3 characters is rejected" data-provider="badNames" finished-at="2026-11-18T11:51:30 IST" duration-ms="4034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ A ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_nameTooShort -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:30 IST" name="tearDown" finished-at="2026-11-18T11:51:31 IST" duration-ms="1472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:31 IST" name="setUp" finished-at="2026-11-18T11:51:33 IST" duration-ms="2061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_nameTooShort(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:33 IST" name="extra_nameTooShort" description="EXTRA | Full name shorter than 3 characters is rejected" data-provider="badNames" finished-at="2026-11-18T11:51:37 IST" duration-ms="3363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_nameTooShort -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:37 IST" name="tearDown" finished-at="2026-11-18T11:51:37 IST" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:37 IST" name="setUp" finished-at="2026-11-18T11:51:39 IST" duration-ms="1598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_passwordMismatch()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:39 IST" name="extra_passwordMismatch" description="EXTRA | Password and confirmation must match" finished-at="2026-11-18T11:51:43 IST" duration-ms="3969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_passwordMismatch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:43 IST" name="tearDown" finished-at="2026-11-18T11:51:43 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:43 IST" name="setUp" finished-at="2026-11-18T11:51:45 IST" duration-ms="1597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_passwordTooShort()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:45 IST" name="extra_passwordTooShort" description="EXTRA | Password shorter than 8 characters is rejected" finished-at="2026-11-18T11:51:48 IST" duration-ms="3460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_passwordTooShort -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:48 IST" name="tearDown" finished-at="2026-11-18T11:51:49 IST" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:49 IST" name="setUp" finished-at="2026-11-18T11:51:51 IST" duration-ms="1893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_phoneMustBeTenDigits(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:51 IST" name="extra_phoneMustBeTenDigits" description="EXTRA | Phone must be exactly 10 digits" data-provider="badPhones" finished-at="2026-11-18T11:51:55 IST" duration-ms="3562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_phoneMustBeTenDigits -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:55 IST" name="tearDown" finished-at="2026-11-18T11:51:55 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:55 IST" name="setUp" finished-at="2026-11-18T11:51:57 IST" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_phoneMustBeTenDigits(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:51:57 IST" name="extra_phoneMustBeTenDigits" description="EXTRA | Phone must be exactly 10 digits" data-provider="badPhones" finished-at="2026-11-18T11:52:01 IST" duration-ms="3675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[98765]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_phoneMustBeTenDigits -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:01 IST" name="tearDown" finished-at="2026-11-18T11:52:01 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:01 IST" name="setUp" finished-at="2026-11-18T11:52:02 IST" duration-ms="1382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_phoneMustBeTenDigits(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:02 IST" name="extra_phoneMustBeTenDigits" description="EXTRA | Phone must be exactly 10 digits" data-provider="badPhones" finished-at="2026-11-18T11:52:06 IST" duration-ms="3108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_phoneMustBeTenDigits -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:06 IST" name="tearDown" finished-at="2026-11-18T11:52:07 IST" duration-ms="1035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:07 IST" name="setUp" finished-at="2026-11-18T11:52:08 IST" duration-ms="1443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_phoneMustBeTenDigits(java.lang.String)[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:08 IST" name="extra_phoneMustBeTenDigits" description="EXTRA | Phone must be exactly 10 digits" data-provider="badPhones" finished-at="2026-11-18T11:52:12 IST" duration-ms="3877" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcdefghij]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_phoneMustBeTenDigits -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:12 IST" name="tearDown" finished-at="2026-11-18T11:52:12 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:12 IST" name="setUp" finished-at="2026-11-18T11:52:15 IST" duration-ms="2282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_welcomeBonusInLedger()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:15 IST" name="extra_welcomeBonusInLedger" description="EXTRA | Welcome bonus appears as the first credit in the transaction table" finished-at="2026-11-18T11:52:22 IST" duration-ms="7059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_welcomeBonusInLedger -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:22 IST" name="tearDown" finished-at="2026-11-18T11:52:22 IST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:22 IST" name="setUp" finished-at="2026-11-18T11:52:23 IST" duration-ms="1448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc013_registerWithValidDetails()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:23 IST" name="tc013_registerWithValidDetails" description="TC_013 | Registration with valid details creates the account and signs in" finished-at="2026-11-18T11:52:32 IST" duration-ms="8847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc013_registerWithValidDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:32 IST" name="tearDown" finished-at="2026-11-18T11:52:32 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:32 IST" name="setUp" finished-at="2026-11-18T11:52:34 IST" duration-ms="1945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc014_openingBalanceIs50000()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:34 IST" name="tc014_openingBalanceIs50000" description="TC_014 | Opening balance of a new account is Rs 50,000" finished-at="2026-11-18T11:52:40 IST" duration-ms="5490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc014_openingBalanceIs50000 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:40 IST" name="tearDown" finished-at="2026-11-18T11:52:41 IST" duration-ms="1248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:41 IST" name="setUp" finished-at="2026-11-18T11:52:43 IST" duration-ms="1660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc015_registerWithEmptyForm()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:43 IST" name="tc015_registerWithEmptyForm" description="TC_015 | Registration without entering any details" finished-at="2026-11-18T11:52:45 IST" duration-ms="2235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc015_registerWithEmptyForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:45 IST" name="tearDown" finished-at="2026-11-18T11:52:45 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:45 IST" name="setUp" finished-at="2026-11-18T11:52:47 IST" duration-ms="1934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc016_registerWithInvalidEmail()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:47 IST" name="tc016_registerWithInvalidEmail" description="TC_016 | Registration with invalid Email Address format" finished-at="2026-11-18T11:52:54 IST" duration-ms="6969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc016_registerWithInvalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:54 IST" name="tearDown" finished-at="2026-11-18T11:52:55 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:55 IST" name="setUp" finished-at="2026-11-18T11:52:57 IST" duration-ms="2175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="tc017_registerWithDuplicateEmail()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:52:57 IST" name="tc017_registerWithDuplicateEmail" description="TC_017 | Registration with an already registered Email Address" finished-at="2026-11-18T11:53:06 IST" duration-ms="9040" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User should stay on registration page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User should stay on registration page expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tta.bank.tests.RegistrationTests.tc017_registerWithDuplicateEmail(RegistrationTests.java:93)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc017_registerWithDuplicateEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:53:06 IST" name="tearDown" finished-at="2026-11-18T11:53:06 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:53:06 IST" name="setUp" finished-at="2026-11-18T11:53:08 IST" duration-ms="1640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc017_registerWithDuplicateEmail()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:53:08 IST" name="tc017_registerWithDuplicateEmail" description="TC_017 | Registration with an already registered Email Address" finished-at="2026-11-18T11:53:17 IST" duration-ms="8826" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User should stay on registration page expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User should stay on registration page expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tta.bank.tests.RegistrationTests.tc017_registerWithDuplicateEmail(RegistrationTests.java:93)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc017_registerWithDuplicateEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:53:18 IST" name="tearDown" finished-at="2026-11-18T11:53:18 IST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:53:18 IST" name="setUp" finished-at="2026-11-18T11:53:19 IST" duration-ms="1288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc019_signInLink()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:53:19 IST" name="tc019_signInLink" description="TC_019 | Sign in link on the registration page" finished-at="2026-11-18T11:53:22 IST" duration-ms="3227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc019_signInLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.RegistrationTests@3857f613]" started-at="2026-11-18T11:53:22 IST" name="tearDown" finished-at="2026-11-18T11:53:24 IST" duration-ms="1127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tta.bank.tests.RegistrationTests -->
+      <class name="com.tta.bank.tests.SessionAndUiTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:53:57 IST" name="setUp" finished-at="2026-11-18T11:54:00 IST" duration-ms="3186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_protectedPagesRequireSession()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:00 IST" name="extra_protectedPagesRequireSession" description="EXTRA | Every protected page redirects to sign in when there is no session" finished-at="2026-11-18T11:54:07 IST" duration-ms="6499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_protectedPagesRequireSession -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:07 IST" name="tearDown" finished-at="2026-11-18T11:54:09 IST" duration-ms="1979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:09 IST" name="setUp" finished-at="2026-11-18T11:54:11 IST" duration-ms="1669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="extra_sidebarNavigation()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:11 IST" name="extra_sidebarNavigation" description="EXTRA | Sidebar navigation reaches every page" finished-at="2026-11-18T11:54:18 IST" duration-ms="7083" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.tta.bank.tests.SessionAndUiTests.extra_sidebarNavigation(SessionAndUiTests.java:128)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_sidebarNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:18 IST" name="tearDown" finished-at="2026-11-18T11:54:19 IST" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:19 IST" name="setUp" finished-at="2026-11-18T11:54:20 IST" duration-ms="1366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_sidebarNavigation()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:20 IST" name="extra_sidebarNavigation" description="EXTRA | Sidebar navigation reaches every page" finished-at="2026-11-18T11:54:25 IST" duration-ms="4776" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.tta.bank.tests.SessionAndUiTests.extra_sidebarNavigation(SessionAndUiTests.java:128)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_sidebarNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:25 IST" name="tearDown" finished-at="2026-11-18T11:54:25 IST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:25 IST" name="setUp" finished-at="2026-11-18T11:54:27 IST" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc042_logout()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:27 IST" name="tc042_logout" description="TC_042 | Logout redirects to the sign in page" finished-at="2026-11-18T11:54:36 IST" duration-ms="8408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc042_logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:36 IST" name="tearDown" finished-at="2026-11-18T11:54:36 IST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:36 IST" name="setUp" finished-at="2026-11-18T11:54:37 IST" duration-ms="1421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="tc043_sessionPersistsAfterReload()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:37 IST" name="tc043_sessionPersistsAfterReload" description="TC_043 | Session survives a page reload" finished-at="2026-11-18T11:54:45 IST" duration-ms="7145" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.tta.bank.tests.SessionAndUiTests.tc043_sessionPersistsAfterReload(SessionAndUiTests.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc043_sessionPersistsAfterReload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:45 IST" name="tearDown" finished-at="2026-11-18T11:54:45 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:45 IST" name="setUp" finished-at="2026-11-18T11:54:47 IST" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc043_sessionPersistsAfterReload()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:47 IST" name="tc043_sessionPersistsAfterReload" description="TC_043 | Session survives a page reload" finished-at="2026-11-18T11:54:51 IST" duration-ms="4071" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.tta.bank.tests.SessionAndUiTests.tc043_sessionPersistsAfterReload(SessionAndUiTests.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc043_sessionPersistsAfterReload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:51 IST" name="tearDown" finished-at="2026-11-18T11:54:51 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:51 IST" name="setUp" finished-at="2026-11-18T11:54:53 IST" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc044_dataIsolationBetweenAccounts()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:54:53 IST" name="tc044_dataIsolationBetweenAccounts" description="TC_044 | Data isolation between two accounts on one browser" finished-at="2026-11-18T11:55:05 IST" duration-ms="12298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc044_dataIsolationBetweenAccounts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:55:05 IST" name="tearDown" finished-at="2026-11-18T11:55:05 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:55:05 IST" name="setUp" finished-at="2026-11-18T11:55:06 IST" duration-ms="972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc045_mobileViewport()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:55:06 IST" name="tc045_mobileViewport" description="TC_045 | Layout on a mobile viewport (390x844)" finished-at="2026-11-18T11:55:10 IST" duration-ms="4046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc045_mobileViewport -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:55:10 IST" name="tearDown" finished-at="2026-11-18T11:55:10 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:55:10 IST" name="setUp" finished-at="2026-11-18T11:55:11 IST" duration-ms="1051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc046_keyboardNavigationOnLogin()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:55:11 IST" name="tc046_keyboardNavigationOnLogin" description="TC_046 | Keyboard navigation on the sign in page: email -&gt; password -&gt; button" finished-at="2026-11-18T11:55:13 IST" duration-ms="1950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc046_keyboardNavigationOnLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.SessionAndUiTests@79079097]" started-at="2026-11-18T11:55:13 IST" name="tearDown" finished-at="2026-11-18T11:55:14 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tta.bank.tests.SessionAndUiTests -->
+      <class name="com.tta.bank.tests.TransactionsTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:53:24 IST" name="setUp" finished-at="2026-11-18T11:53:25 IST" duration-ms="1839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="extra_categoryFilterAndReset()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:53:25 IST" name="extra_categoryFilterAndReset" description="EXTRA | Category filter and Reset button" finished-at="2026-11-18T11:53:39 IST" duration-ms="13948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extra_categoryFilterAndReset -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:53:39 IST" name="tearDown" finished-at="2026-11-18T11:53:42 IST" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:53:42 IST" name="setUp" finished-at="2026-11-18T11:53:43 IST" duration-ms="1613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc038_allTransactionsListed()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:53:43 IST" name="tc038_allTransactionsListed" description="TC_038 | Every transaction is listed exactly once" finished-at="2026-11-18T11:53:56 IST" duration-ms="12838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc038_allTransactionsListed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:53:56 IST" name="tearDown" finished-at="2026-11-18T11:53:57 IST" duration-ms="694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:53:57 IST" name="setUp" finished-at="2026-11-18T11:53:59 IST" duration-ms="1851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc039_filterByType()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:53:59 IST" name="tc039_filterByType" description="TC_039 | Filter transactions by type (debit / credit)" finished-at="2026-11-18T11:54:14 IST" duration-ms="15396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc039_filterByType -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:54:14 IST" name="tearDown" finished-at="2026-11-18T11:54:14 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:54:14 IST" name="setUp" finished-at="2026-11-18T11:54:16 IST" duration-ms="1271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc040_searchByKeyword()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:54:16 IST" name="tc040_searchByKeyword" description="TC_040 | Search by beneficiary name, then clear the filter" finished-at="2026-11-18T11:54:29 IST" duration-ms="13308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc040_searchByKeyword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:54:29 IST" name="tearDown" finished-at="2026-11-18T11:54:30 IST" duration-ms="886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:54:30 IST" name="setUp" finished-at="2026-11-18T11:54:32 IST" duration-ms="2548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc041_ledgerReconcilesWithBalance()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:54:32 IST" name="tc041_ledgerReconcilesWithBalance" description="TC_041 | Ledger reconciles with the balance (opening + credits - debits = balance)" finished-at="2026-11-18T11:54:48 IST" duration-ms="15144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc041_ledgerReconcilesWithBalance -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tta.bank.tests.TransactionsTests@3bf7ca37]" started-at="2026-11-18T11:54:48 IST" name="tearDown" finished-at="2026-11-18T11:54:50 IST" duration-ms="2511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tta.bank.tests.TransactionsTests -->
+    </test> <!-- TTA Bank - UI Regression -->
+  </suite> <!-- TTA Bank Regression -->
+</testng-results>

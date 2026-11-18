@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Runs ONLY the tests that document defects already logged as "Fail" in the Excel sheet.
+     These are EXPECTED to fail until the app is fixed. -->
+<suite name="TTA Bank Known Defects" verbose="1">
+  <listeners>
+    <listener class-name="com.tta.bank.listeners.TestListener"/>
+  </listeners>
+  <test name="TTA Bank - Known Defects">
+    <groups>
+      <run><include name="known-defect"/></run>
+    </groups>
+    <packages>
+      <package name="com.tta.bank.tests"/>
+    </packages>
+  </test>
+</suite>
