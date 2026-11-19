@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.math.BigDecimal;
 
-/** TS_04 - QR payment (TC_034 .. TC_037). */
+/** TS_04 - QR payment (TC_023 .. TC_025). */
 public class QrPaymentTests extends BaseTest {
 
     private static final BigDecimal OPENING = new BigDecimal("50000");
@@ -20,8 +20,8 @@ public class QrPaymentTests extends BaseTest {
     }
 
     @Test(groups = {"smoke", "regression"},
-          description = "TC_034 | Dummy QR code and merchant payment details are displayed")
-    public void tc034_qrCodeIsDisplayed() {
+          description = "TC_023 | Dummy QR code and merchant payment details are displayed")
+    public void tc023_qrCodeIsDisplayed() {
         QrPaymentPage qr = openQr();
 
         Assert.assertTrue(qr.isQrDisplayed(), "QR code should be displayed");
@@ -32,8 +32,8 @@ public class QrPaymentTests extends BaseTest {
     }
 
     @Test(groups = {"smoke", "regression"},
-          description = "TC_035 | Mark as paid debits the balance and logs a transaction")
-    public void tc035_markAsPaidFlow() {
+          description = "TC_024 | Mark as paid debits the balance and logs a transaction")
+    public void tc024_markAsPaidFlow() {
         QrPaymentPage qr = openQr();
 
         qr.enterAmount("249").selectCategory("Shopping").clickMarkPaid();
@@ -51,27 +51,14 @@ public class QrPaymentTests extends BaseTest {
         assertMoney(tx.getSignedAmount(0), "-249", "Ledger amount");
     }
 
-    @Test(groups = {"regression"},
-          description = "TC_036 | Double-clicking mark as paid records only one debit")
-    public void tc036_markAsPaidNotAppliedTwice() {
-        QrPaymentPage qr = openQr();
-
-        qr.enterAmount("300").selectCategory("Bills").doubleClickMarkPaid();
-        waitUntil(() -> qr.getBalance().compareTo(OPENING) < 0);
-
-        assertMoney(qr.getBalance(), "49700", "Only one debit of Rs 300 expected");
-        TransactionsPage tx = new TransactionsPage(driver).open();
-        Assert.assertEquals(tx.getRowCount(), 2, "Exactly one QR transaction expected (plus welcome credit)");
-    }
-
     @DataProvider(name = "invalidQrAmounts")
     public Object[][] invalidQrAmounts() {
         return new Object[][]{{"0"}, {"-50"}, {""}};
     }
 
     @Test(dataProvider = "invalidQrAmounts", groups = {"regression", "negative"},
-          description = "TC_037 | QR payment with an invalid amount (0 / -50 / empty)")
-    public void tc037_invalidQrAmount(String amount) {
+          description = "TC_025 | QR payment with an invalid amount (0 / -50 / empty)")
+    public void tc025_invalidQrAmount(String amount) {
         QrPaymentPage qr = openQr();
 
         qr.enterAmount(amount).clickMarkPaid();

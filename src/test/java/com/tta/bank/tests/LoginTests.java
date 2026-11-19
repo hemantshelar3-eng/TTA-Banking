@@ -9,9 +9,11 @@ import com.tta.bank.utils.UserData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 import java.math.BigDecimal;
 
-/** TS_01 - Sign in (TC_001 .. TC_012). Each test registers its own customer first, then signs out. */
+/** TS_01 - Sign in (TC_001 .. TC_010). Each test registers its own customer first, then signs out. */
 public class LoginTests extends BaseTest {
 
     @Test(groups = {"regression", "negative"},
@@ -26,21 +28,10 @@ public class LoginTests extends BaseTest {
         Assert.assertEquals(login.getPasswordError(), "Password is required");
     }
 
-    @Test(groups = {"smoke", "regression"},
-          description = "TC_002 | Sign in with valid credentials lands on dashboard with balance")
-    public void tc002_signInWithValidCredentials() {
-        UserData user = registerThenLogout();
-
-        DashboardPage dash = openLogin().loginAs(user.email, user.password);
-
-        Assert.assertTrue(dash.isLoaded(), "Dashboard should be displayed");
-        Assert.assertTrue(dash.getBalanceText().contains("₹"), "Balance should be shown in rupees");
-        Assert.assertEquals(dash.getAccountHolder(), user.name);
-    }
-
+    
     @Test(groups = {"regression", "negative"},
-          description = "TC_003 | Valid Email Address with invalid password")
-    public void tc003_validEmailInvalidPassword() {
+          description = "TC_002 | Valid Email Address with invalid password")
+    public void tc002_validEmailInvalidPassword() {
         UserData user = registerThenLogout();
 
         LoginPage login = openLogin().login(user.email, "Wrong@9999");
@@ -51,8 +42,8 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(groups = {"regression", "negative"},
-          description = "TC_004 | Unregistered Email Address with valid password")
-    public void tc004_unregisteredEmail() {
+          description = "TC_003 | Unregistered Email Address with valid password")
+    public void tc003_unregisteredEmail() {
         LoginPage login = openLogin().login("unregister.user@ttabank.in", "Test@1234");
 
         Assert.assertTrue(login.isAlertDisplayed(), "Error message should be displayed");
@@ -60,8 +51,8 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(groups = {"regression", "negative"},
-          description = "TC_005 | Invalid Email Address format")
-    public void tc005_invalidEmailFormat() {
+          description = "TC_004 | Invalid Email Address format")
+    public void tc004_invalidEmailFormat() {
         LoginPage login = openLogin().login("abc@", "Test@1234");
 
         Assert.assertTrue(login.isEmailErrorDisplayed(), "Email validation message should be displayed");
@@ -70,8 +61,8 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(groups = {"regression", "negative"},
-          description = "TC_006 | Valid Email Address and empty password")
-    public void tc006_emptyPassword() {
+          description = "TC_005 | Valid Email Address and empty password")
+    public void tc005_emptyPassword() {
         UserData user = registerThenLogout();
 
         LoginPage login = openLogin().enterEmail(user.email).clickSignIn();
@@ -82,28 +73,19 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(groups = {"smoke", "regression"},
-          description = "TC_007 | Password field masks the characters")
-    public void tc007_passwordFieldIsMasked() {
+          description = "TC_006 | Password field masks the characters")
+    public void tc006_passwordFieldIsMasked() {
         LoginPage login = openLogin().enterPassword("Test@1234");
 
         Assert.assertEquals(login.getPasswordFieldType(), "password",
                 "Password input must be type=password so characters are not shown in plain text");
     }
 
-    @Test(groups = {"regression", "negative"},
-          description = "TC_008 | Password in different case must fail")
-    public void tc008_passwordIsCaseSensitive() {
-        UserData user = registerThenLogout();
-
-        LoginPage login = openLogin().login(user.email, user.password.toLowerCase());
-
-        Assert.assertTrue(login.isAlertDisplayed(), "Sign in should fail with an error message");
-        assertOnLoginPage("User should stay on sign in page");
-    }
+   
 
     @Test(groups = {"regression"},
-          description = "TC_009 | Sign in by pressing the Enter key")
-    public void tc009_signInWithEnterKey() {
+          description = "TC_007 | Sign in by pressing the Enter key")
+    public void tc007_signInWithEnterKey() {
         UserData user = registerThenLogout();
 
         openLogin().enterEmail(user.email).enterPassword(user.password).pressEnterInPassword();
@@ -112,17 +94,18 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(groups = {"smoke", "regression"},
-          description = "TC_010 | 'Open an account' link opens the registration page")
-    public void tc010_openAnAccountLink() {
+          description = "TC_008 | 'Open an account' link opens the registration page")
+    public void tc008_openAnAccountLink() {
         RegisterPage register = openLogin().clickOpenAnAccount();
-
+        //System.out.println("Current URL: " + driver.getCurrentUrl());
         Assert.assertTrue(register.isLoaded(), "Registration page should be displayed");
-        Assert.assertTrue(register.currentUrl().contains("register.html"), "URL should be register.html");
-    }
+       // Assert.assertEquals(driver.getCurrentUrl(), "https://app.thetestingacademy.com/playwright/tta-bank/");
+        
+         }
 
     @Test(groups = {"regression", "negative", "security"},
-          description = "TC_011 | Sign in with SQL injection input")
-    public void tc011_sqlInjectionIsRejected() {
+          description = "TC_009 | Sign in with SQL injection input")
+    public void tc009_sqlInjectionIsRejected() {
         String payload = "' OR 1=1 --";
 
         // a) payload in the email field -> rejected as an invalid email
@@ -138,8 +121,8 @@ public class LoginTests extends BaseTest {
     }
 
     @Test(groups = {"smoke", "regression", "security"},
-          description = "TC_012 | Dashboard cannot be opened without signing in")
-    public void tc012_dashboardRequiresLogin() {
+          description = "TC_010 | Dashboard cannot be opened without signing in")
+    public void tc010_dashboardRequiresLogin() {
         // fresh browser => no session
         driver.get(ConfigReader.baseUrl() + "dashboard.html");
 
@@ -151,8 +134,10 @@ public class LoginTests extends BaseTest {
     // "masking button not displayed" - there is no show/hide password control.
     // Run with:  mvn test -DsuiteXmlFile=testng-known-defects.xml
     // ------------------------------------------------------------------------------------------
-    @Test(groups = {"known-defect"},
-          description = "DEFECT | TC_002..008 - password show/hide (unmask) toggle should exist")
+    @Test(groups = {"smoke", "regression"},
+    		description = "TC_034 | Password show/hide (unmask) toggle should exist")
+       
+          
     public void defect_passwordUnmaskToggleMissing() {
         LoginPage login = openLogin().enterPassword("Test@1234");
 

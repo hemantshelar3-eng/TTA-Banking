@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TTA Bank - UI Regression</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>56/6/6</td>
+<td>Tests passed/Failed/Skipped:</td><td>33/2/2</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 18 11:51:11 IST 2026</td>
+<td>Started on:</td><td>Thu Nov 19 18:10:15 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>242 seconds (242421 ms)</td>
+<tr><td>Total time:</td><td>135 seconds (135428 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>regression smoke </td>
 </tr><tr>
@@ -76,20 +76,56 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tta.bank.tests.RegistrationTests.tc017_registerWithDuplicateEmail()'><b>tc017_registerWithDuplicateEmail</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_017 | Registration with an already registered Email Address</td>
-<td><div><pre>java.lang.AssertionError: User should stay on registration page expected [true] but found [false]
-	at com.tta.bank.tests.RegistrationTests.tc017_registerWithDuplicateEmail(RegistrationTests.java:93)
+<td title='com.tta.bank.tests.LoginTests.defect_passwordUnmaskToggleMissing()'><b>defect_passwordUnmaskToggleMissing</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_034 | Password show/hide (unmask) toggle should exist</td>
+<td><div><pre>java.lang.AssertionError: Expected a show/hide password control (sheet: &apos;Password should be displayed in masked and Unmasked format&apos;) expected [true] but found [false]
+	at com.tta.bank.tests.LoginTests.defect_passwordUnmaskToggleMissing(LoginTests.java:144)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2024491576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2024491576'><pre>java.lang.AssertionError: User should stay on registration page expected [true] but found [false]
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace402096256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace402096256'><pre>java.lang.AssertionError: Expected a show/hide password control (sheet: &apos;Password should be displayed in masked and Unmasked format&apos;) expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.tta.bank.tests.RegistrationTests.tc017_registerWithDuplicateEmail(RegistrationTests.java:93)
+	at com.tta.bank.tests.LoginTests.defect_passwordUnmaskToggleMissing(LoginTests.java:144)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
+<tr>
+<td title='com.tta.bank.tests.SessionAndUiTests.tc029_backAfterLogoutMustNotShowDashboard()'><b>tc029_backAfterLogoutMustNotShowDashboard</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: DEFECT | TC_029 | Browser Back after logout must not expose protected pages</td>
+<td><div><pre>java.lang.AssertionError: After logout, browser back must not show dashboard expected [https://app.thetestingacademy.com/playwright/tta-bank/] but found [https://app.thetestingacademy.com/playwright/tta-bank/dashboard]
+	at com.tta.bank.tests.SessionAndUiTests.tc029_backAfterLogoutMustNotShowDashboard(SessionAndUiTests.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1388970822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1388970822'><pre>java.lang.AssertionError: After logout, browser back must not show dashboard expected [https://app.thetestingacademy.com/playwright/tta-bank/] but found [https://app.thetestingacademy.com/playwright/tta-bank/dashboard]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.tta.bank.tests.SessionAndUiTests.tc029_backAfterLogoutMustNotShowDashboard(SessionAndUiTests.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -108,183 +144,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>8</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.tc043_sessionPersistsAfterReload()'><b>tc043_sessionPersistsAfterReload</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: TC_043 | Session survives a page reload</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.tta.bank.tests.SessionAndUiTests.tc043_sessionPersistsAfterReload(SessionAndUiTests.java:52)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472095245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1472095245'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.tta.bank.tests.SessionAndUiTests.tc043_sessionPersistsAfterReload(SessionAndUiTests.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>4</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc021_successfulTransfer()'><b>tc021_successfulTransfer</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_021 | Successful transfer of Rs 500 reduces the balance by Rs 500</td>
-<td><div><pre>java.lang.AssertionError: Success message should be displayed expected [true] but found [false]
-	at com.tta.bank.tests.SendMoneyTests.tc021_successfulTransfer(SendMoneyTests.java:53)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace961434328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace961434328'><pre>java.lang.AssertionError: Success message should be displayed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.tta.bank.tests.SendMoneyTests.tc021_successfulTransfer(SendMoneyTests.java:53)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>13</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc010_openAnAccountLink()'><b>tc010_openAnAccountLink</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_010 | 'Open an account' link opens the registration page</td>
-<td><div><pre>java.lang.AssertionError: URL should be register.html expected [true] but found [false]
-	at com.tta.bank.tests.LoginTests.tc010_openAnAccountLink(LoginTests.java:120)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1016104155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1016104155'><pre>java.lang.AssertionError: URL should be register.html expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.tta.bank.tests.LoginTests.tc010_openAnAccountLink(LoginTests.java:120)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>2</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc031_balancePersistsAfterReload()'><b>tc031_balancePersistsAfterReload</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_031 | Balance and history persist after page reload</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.tta.bank.tests.SendMoneyTests.tc031_balancePersistsAfterReload(SendMoneyTests.java:181)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace984032732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace984032732'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1067)
-	at org.testng.Assert.assertEquals(Assert.java:1031)
-	at org.testng.Assert.assertEquals(Assert.java:1077)
-	at com.tta.bank.tests.SendMoneyTests.tc031_balancePersistsAfterReload(SendMoneyTests.java:181)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>6</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.extra_sidebarNavigation()'><b>extra_sidebarNavigation</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: EXTRA | Sidebar navigation reaches every page</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.tta.bank.tests.SessionAndUiTests.extra_sidebarNavigation(SessionAndUiTests.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1699051675", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1699051675'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.tta.bank.tests.SessionAndUiTests.extra_sidebarNavigation(SessionAndUiTests.java:128)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>4</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
+<td>com.tta.bank.tests.SessionAndUiTests@f5958c9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -295,285 +155,170 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tta.bank.tests.RegistrationTests.extra_nameTooShort()'><b>extra_nameTooShort</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Full name shorter than 3 characters is rejected<br>Parameters: Al</td>
-<td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc007_passwordFieldIsMasked()'><b>tc007_passwordFieldIsMasked</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_007 | Password field masks the characters</td>
-<td></td>
-<td>3</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.QrPaymentTests.tc034_qrCodeIsDisplayed()'><b>tc034_qrCodeIsDisplayed</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_034 | Dummy QR code and merchant payment details are displayed</td>
-<td></td>
-<td>6</td>
-<td>com.tta.bank.tests.QrPaymentTests@3c9754d8</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc023_transferWithoutBeneficiary()'><b>tc023_transferWithoutBeneficiary</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_023 | Transfer without selecting a beneficiary</td>
-<td></td>
-<td>7</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc001_signInWithEmptyFields()'><b>tc001_signInWithEmptyFields</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_001 | Sign in button without entering Email Address and Password</td>
-<td></td>
-<td>4</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.QrPaymentTests.tc037_invalidQrAmount()'><b>tc037_invalidQrAmount</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_037 | QR payment with an invalid amount (0 / -50 / empty)<br>Parameters: 0</td>
-<td></td>
-<td>5</td>
-<td>com.tta.bank.tests.QrPaymentTests@3c9754d8</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.tc045_mobileViewport()'><b>tc045_mobileViewport</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: TC_045 | Layout on a mobile viewport (390x844)</td>
-<td></td>
-<td>4</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
-<tr>
-<td title='com.tta.bank.tests.TransactionsTests.tc041_ledgerReconcilesWithBalance()'><b>tc041_ledgerReconcilesWithBalance</b><br>Test class: com.tta.bank.tests.TransactionsTests<br>Test method: TC_041 | Ledger reconciles with the balance (opening + credits - debits = balance)</td>
-<td></td>
-<td>15</td>
-<td>com.tta.bank.tests.TransactionsTests@3bf7ca37</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc032_doubleClickDebitsOnce()'><b>tc032_doubleClickDebitsOnce</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_032 | Double-clicking 'Confirm and send' debits only once</td>
+<td title='com.tta.bank.tests.SendMoneyTests.tc019_transferWithEmptyAmount()'><b>tc019_transferWithEmptyAmount</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_019 | Transfer with an empty amount</td>
 <td></td>
 <td>9</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
+<td>com.tta.bank.tests.SendMoneyTests@3eb25e1a</td></tr>
 <tr>
-<td title='com.tta.bank.tests.TransactionsTests.tc040_searchByKeyword()'><b>tc040_searchByKeyword</b><br>Test class: com.tta.bank.tests.TransactionsTests<br>Test method: TC_040 | Search by beneficiary name, then clear the filter</td>
-<td></td>
-<td>13</td>
-<td>com.tta.bank.tests.TransactionsTests@3bf7ca37</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.extra_dashboardReflectsTransfer()'><b>extra_dashboardReflectsTransfer</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: EXTRA | Dashboard recent list, counters and expense tracker reflect a transfer</td>
-<td></td>
-<td>12</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.QrPaymentTests.tc035_markAsPaidFlow()'><b>tc035_markAsPaidFlow</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_035 | Mark as paid debits the balance and logs a transaction</td>
-<td></td>
-<td>10</td>
-<td>com.tta.bank.tests.QrPaymentTests@3c9754d8</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc009_signInWithEnterKey()'><b>tc009_signInWithEnterKey</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_009 | Sign in by pressing the Enter key</td>
-<td></td>
-<td>6</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.tc016_registerWithInvalidEmail()'><b>tc016_registerWithInvalidEmail</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_016 | Registration with invalid Email Address format</td>
-<td></td>
-<td>6</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.extra_passwordMismatch()'><b>extra_passwordMismatch</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Password and confirmation must match</td>
-<td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.extra_phoneMustBeTenDigits()'><b>extra_phoneMustBeTenDigits</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Phone must be exactly 10 digits<br>Parameters: </td>
-<td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc025_026_zeroAndNegativeAmountRejected()'><b>tc025_026_zeroAndNegativeAmountRejected</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_025 / TC_026 | Zero and negative amounts are rejected<br>Parameters: 0, TC_025 zero</td>
-<td></td>
-<td>10</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.QrPaymentTests.tc036_markAsPaidNotAppliedTwice()'><b>tc036_markAsPaidNotAppliedTwice</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_036 | Double-clicking mark as paid records only one debit</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.QrPaymentTests@3c9754d8</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc027_nonNumericAmount()'><b>tc027_nonNumericAmount</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_027 | Non-numeric amount is rejected or ignored</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.extra_protectedPagesRequireSession()'><b>extra_protectedPagesRequireSession</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: EXTRA | Every protected page redirects to sign in when there is no session</td>
-<td></td>
-<td>6</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc005_invalidEmailFormat()'><b>tc005_invalidEmailFormat</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_005 | Invalid Email Address format</td>
-<td></td>
-<td>2</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.tc014_openingBalanceIs50000()'><b>tc014_openingBalanceIs50000</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_014 | Opening balance of a new account is Rs 50,000</td>
-<td></td>
-<td>5</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.extra_welcomeBonusInLedger()'><b>extra_welcomeBonusInLedger</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Welcome bonus appears as the first credit in the transaction table</td>
-<td></td>
-<td>7</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.QrPaymentTests.tc037_invalidQrAmount()'><b>tc037_invalidQrAmount</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_037 | QR payment with an invalid amount (0 / -50 / empty)<br>Parameters: -50</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.QrPaymentTests@3c9754d8</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.extra_phoneMustBeTenDigits()'><b>extra_phoneMustBeTenDigits</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Phone must be exactly 10 digits<br>Parameters: 12345</td>
-<td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc030_twoConsecutiveTransfers()'><b>tc030_twoConsecutiveTransfers</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_030 | Balance after two consecutive transfers (200 + 300)</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc020_savedBeneficiariesList()'><b>tc020_savedBeneficiariesList</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_020 | Saved beneficiaries list shows the five payees</td>
-<td></td>
-<td>5</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc011_sqlInjectionIsRejected()'><b>tc011_sqlInjectionIsRejected</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_011 | Sign in with SQL injection input</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc002_signInWithValidCredentials()'><b>tc002_signInWithValidCredentials</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_002 | Sign in with valid credentials lands on dashboard with balance</td>
+<td title='com.tta.bank.tests.SendMoneyTests.tc020_nonNumericAmount()'><b>tc020_nonNumericAmount</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_020 | Non-numeric amount is rejected or ignored</td>
 <td></td>
 <td>11</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
+<td>com.tta.bank.tests.SendMoneyTests@3eb25e1a</td></tr>
 <tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc024_transferWithEmptyAmount()'><b>tc024_transferWithEmptyAmount</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_024 | Transfer with an empty amount</td>
+<td title='com.tta.bank.tests.RegistrationTests.tc013_registerWithInvalidEmail()'><b>tc013_registerWithInvalidEmail</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_013 | Registration with invalid Email Address format</td>
 <td></td>
 <td>7</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
 <tr>
-<td title='com.tta.bank.tests.TransactionsTests.tc038_allTransactionsListed()'><b>tc038_allTransactionsListed</b><br>Test class: com.tta.bank.tests.TransactionsTests<br>Test method: TC_038 | Every transaction is listed exactly once</td>
+<td title='com.tta.bank.tests.SendMoneyTests.tc021_amountGreaterThanBalance()'><b>tc021_amountGreaterThanBalance</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_021 | Amount greater than the balance is refused</td>
 <td></td>
 <td>12</td>
-<td>com.tta.bank.tests.TransactionsTests@3bf7ca37</td></tr>
+<td>com.tta.bank.tests.SendMoneyTests@3eb25e1a</td></tr>
 <tr>
-<td title='com.tta.bank.tests.RegistrationTests.tc019_signInLink()'><b>tc019_signInLink</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_019 | Sign in link on the registration page</td>
+<td title='com.tta.bank.tests.SendMoneyTests.tc018_transferWithoutBeneficiary()'><b>tc018_transferWithoutBeneficiary</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_018 | Transfer without selecting a beneficiary</td>
 <td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
+<td>6</td>
+<td>com.tta.bank.tests.SendMoneyTests@3eb25e1a</td></tr>
 <tr>
-<td title='com.tta.bank.tests.RegistrationTests.extra_phoneMustBeTenDigits()'><b>extra_phoneMustBeTenDigits</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Phone must be exactly 10 digits<br>Parameters: 98765</td>
+<td title='com.tta.bank.tests.RegistrationTests.tc015_signInLink()'><b>tc015_signInLink</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_015 | Sign in link on the registration page</td>
 <td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
+<td>2</td>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
 <tr>
-<td title='com.tta.bank.tests.RegistrationTests.extra_phoneMustBeTenDigits()'><b>extra_phoneMustBeTenDigits</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Phone must be exactly 10 digits<br>Parameters: abcdefghij</td>
+<td title='com.tta.bank.tests.QrPaymentTests.tc025_invalidQrAmount()'><b>tc025_invalidQrAmount</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_025 | QR payment with an invalid amount (0 / -50 / empty)<br>Parameters: 0</td>
 <td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
+<td>5</td>
+<td>com.tta.bank.tests.QrPaymentTests@477b4cdf</td></tr>
 <tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc025_026_zeroAndNegativeAmountRejected()'><b>tc025_026_zeroAndNegativeAmountRejected</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_025 / TC_026 | Zero and negative amounts are rejected<br>Parameters: -100, TC_026 negative</td>
+<td title='com.tta.bank.tests.TransactionsTests.tc026_allTransactionsListed()'><b>tc026_allTransactionsListed</b><br>Test class: com.tta.bank.tests.TransactionsTests<br>Test method: TC_026 | Every transaction is listed exactly once</td>
+<td></td>
+<td>13</td>
+<td>com.tta.bank.tests.TransactionsTests@77c2494c</td></tr>
+<tr>
+<td title='com.tta.bank.tests.QrPaymentTests.tc025_invalidQrAmount()'><b>tc025_invalidQrAmount</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_025 | QR payment with an invalid amount (0 / -50 / empty)<br>Parameters: </td>
 <td></td>
 <td>8</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
+<td>com.tta.bank.tests.QrPaymentTests@477b4cdf</td></tr>
 <tr>
 <td title='com.tta.bank.tests.RegistrationTests.extra_nameTooShort()'><b>extra_nameTooShort</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Full name shorter than 3 characters is rejected<br>Parameters: </td>
 <td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
+<td>5</td>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
 <tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc022_transferRecordedInLedger()'><b>tc022_transferRecordedInLedger</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_022 | Transfer is recorded as a debit row in the transaction table</td>
+<td title='com.tta.bank.tests.RegistrationTests.tc011_registerWithValidDetails()'><b>tc011_registerWithValidDetails</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_011 | Registration with valid details creates the account and signs in</td>
 <td></td>
-<td>9</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
+<td>7</td>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
 <tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc029_decimalAmount()'><b>tc029_decimalAmount</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_029 | Decimal amount Rs 100.50 is debited exactly</td>
-<td></td>
-<td>6</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc012_dashboardRequiresLogin()'><b>tc012_dashboardRequiresLogin</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_012 | Dashboard cannot be opened without signing in</td>
+<td title='com.tta.bank.tests.LoginTests.tc008_openAnAccountLink()'><b>tc008_openAnAccountLink</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_008 | 'Open an account' link opens the registration page</td>
 <td></td>
 <td>3</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
 <tr>
-<td title='com.tta.bank.tests.TransactionsTests.tc039_filterByType()'><b>tc039_filterByType</b><br>Test class: com.tta.bank.tests.TransactionsTests<br>Test method: TC_039 | Filter transactions by type (debit / credit)</td>
+<td title='com.tta.bank.tests.SendMoneyTests.tc022_doubleClickDebitsOnce()'><b>tc022_doubleClickDebitsOnce</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_022 | Double-clicking 'Confirm and send' debits only once</td>
 <td></td>
-<td>15</td>
-<td>com.tta.bank.tests.TransactionsTests@3bf7ca37</td></tr>
+<td>8</td>
+<td>com.tta.bank.tests.SendMoneyTests@3eb25e1a</td></tr>
 <tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc025_026_zeroAndNegativeAmountRejected()'><b>tc025_026_zeroAndNegativeAmountRejected</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_025 / TC_026 | Zero and negative amounts are rejected<br>Parameters: -0.5, negative decimal</td>
+<td title='com.tta.bank.tests.LoginTests.tc002_validEmailInvalidPassword()'><b>tc002_validEmailInvalidPassword</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_002 | Valid Email Address with invalid password</td>
 <td></td>
 <td>9</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
 <tr>
-<td title='com.tta.bank.tests.QrPaymentTests.tc037_invalidQrAmount()'><b>tc037_invalidQrAmount</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_037 | QR payment with an invalid amount (0 / -50 / empty)<br>Parameters: </td>
+<td title='com.tta.bank.tests.RegistrationTests.extra_nameTooShort()'><b>extra_nameTooShort</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Full name shorter than 3 characters is rejected<br>Parameters: Al</td>
 <td></td>
-<td>6</td>
-<td>com.tta.bank.tests.QrPaymentTests@3c9754d8</td></tr>
+<td>4</td>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
 <tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.tc044_dataIsolationBetweenAccounts()'><b>tc044_dataIsolationBetweenAccounts</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: TC_044 | Data isolation between two accounts on one browser</td>
+<td title='com.tta.bank.tests.LoginTests.tc001_signInWithEmptyFields()'><b>tc001_signInWithEmptyFields</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_001 | Sign in button without entering Email Address and Password</td>
+<td></td>
+<td>2</td>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
+<tr>
+<td title='com.tta.bank.tests.LoginTests.tc006_passwordFieldIsMasked()'><b>tc006_passwordFieldIsMasked</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_006 | Password field masks the characters</td>
+<td></td>
+<td>2</td>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
+<tr>
+<td title='com.tta.bank.tests.TransactionsTests.tc027_ledgerReconcilesWithBalance()'><b>tc027_ledgerReconcilesWithBalance</b><br>Test class: com.tta.bank.tests.TransactionsTests<br>Test method: TC_027 | Ledger reconciles with the balance (opening + credits - debits = balance)</td>
+<td></td>
+<td>16</td>
+<td>com.tta.bank.tests.TransactionsTests@77c2494c</td></tr>
+<tr>
+<td title='com.tta.bank.tests.RegistrationTests.tc012_registerWithEmptyForm()'><b>tc012_registerWithEmptyForm</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_012 | Registration without entering any details</td>
+<td></td>
+<td>3</td>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
+<tr>
+<td title='com.tta.bank.tests.SessionAndUiTests.tc030_keyboardNavigationOnLogin()'><b>tc030_keyboardNavigationOnLogin</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: TC_030 | Keyboard navigation on the sign in page: email -> password -> button</td>
+<td></td>
+<td>2</td>
+<td>com.tta.bank.tests.SessionAndUiTests@f5958c9</td></tr>
+<tr>
+<td title='com.tta.bank.tests.LoginTests.tc003_unregisteredEmail()'><b>tc003_unregisteredEmail</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_003 | Unregistered Email Address with valid password</td>
+<td></td>
+<td>4</td>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
+<tr>
+<td title='com.tta.bank.tests.RegistrationTests.tc014_registerWithDuplicateEmail()'><b>tc014_registerWithDuplicateEmail</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_014 | Registration with an already registered Email Address</td>
+<td></td>
+<td>11</td>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
+<tr>
+<td title='com.tta.bank.tests.QrPaymentTests.tc025_invalidQrAmount()'><b>tc025_invalidQrAmount</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_025 | QR payment with an invalid amount (0 / -50 / empty)<br>Parameters: -50</td>
+<td></td>
+<td>8</td>
+<td>com.tta.bank.tests.QrPaymentTests@477b4cdf</td></tr>
+<tr>
+<td title='com.tta.bank.tests.QrPaymentTests.tc024_markAsPaidFlow()'><b>tc024_markAsPaidFlow</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_024 | Mark as paid debits the balance and logs a transaction</td>
+<td></td>
+<td>8</td>
+<td>com.tta.bank.tests.QrPaymentTests@477b4cdf</td></tr>
+<tr>
+<td title='com.tta.bank.tests.LoginTests.tc009_sqlInjectionIsRejected()'><b>tc009_sqlInjectionIsRejected</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_009 | Sign in with SQL injection input</td>
+<td></td>
+<td>10</td>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
+<tr>
+<td title='com.tta.bank.tests.LoginTests.tc007_signInWithEnterKey()'><b>tc007_signInWithEnterKey</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_007 | Sign in by pressing the Enter key</td>
 <td></td>
 <td>12</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
 <tr>
-<td title='com.tta.bank.tests.LoginTests.tc008_passwordIsCaseSensitive()'><b>tc008_passwordIsCaseSensitive</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_008 | Password in different case must fail</td>
+<td title='com.tta.bank.tests.LoginTests.tc004_invalidEmailFormat()'><b>tc004_invalidEmailFormat</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_004 | Invalid Email Address format</td>
 <td></td>
-<td>5</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
+<td>2</td>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
 <tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.tc046_keyboardNavigationOnLogin()'><b>tc046_keyboardNavigationOnLogin</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: TC_046 | Keyboard navigation on the sign in page: email -> password -> button</td>
+<td title='com.tta.bank.tests.QrPaymentTests.tc023_qrCodeIsDisplayed()'><b>tc023_qrCodeIsDisplayed</b><br>Test class: com.tta.bank.tests.QrPaymentTests<br>Test method: TC_023 | Dummy QR code and merchant payment details are displayed</td>
 <td></td>
-<td>1</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
+<td>7</td>
+<td>com.tta.bank.tests.QrPaymentTests@477b4cdf</td></tr>
+<tr>
+<td title='com.tta.bank.tests.RegistrationTests.tc016_passwordMismatch()'><b>tc016_passwordMismatch</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: tc016 | Password and confirmation must match</td>
+<td></td>
+<td>6</td>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
+<tr>
+<td title='com.tta.bank.tests.LoginTests.tc010_dashboardRequiresLogin()'><b>tc010_dashboardRequiresLogin</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_010 | Dashboard cannot be opened without signing in</td>
+<td></td>
+<td>2</td>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
 <tr>
 <td title='com.tta.bank.tests.RegistrationTests.extra_nameTooShort()'><b>extra_nameTooShort</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Full name shorter than 3 characters is rejected<br>Parameters:  A </td>
 <td></td>
 <td>4</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
+<td>com.tta.bank.tests.RegistrationTests@662ac478</td></tr>
 <tr>
-<td title='com.tta.bank.tests.LoginTests.tc003_validEmailInvalidPassword()'><b>tc003_validEmailInvalidPassword</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_003 | Valid Email Address with invalid password</td>
+<td title='com.tta.bank.tests.SessionAndUiTests.tc028_logout()'><b>tc028_logout</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: TC_028 | Logout redirects to the sign in page</td>
 <td></td>
-<td>7</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
+<td>6</td>
+<td>com.tta.bank.tests.SessionAndUiTests@f5958c9</td></tr>
 <tr>
-<td title='com.tta.bank.tests.RegistrationTests.extra_passwordTooShort()'><b>extra_passwordTooShort</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: EXTRA | Password shorter than 8 characters is rejected</td>
-<td></td>
-<td>3</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.tc042_logout()'><b>tc042_logout</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: TC_042 | Logout redirects to the sign in page</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc006_emptyPassword()'><b>tc006_emptyPassword</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_006 | Valid Email Address and empty password</td>
+<td title='com.tta.bank.tests.LoginTests.tc005_emptyPassword()'><b>tc005_emptyPassword</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_005 | Valid Email Address and empty password</td>
 <td></td>
 <td>9</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.tc013_registerWithValidDetails()'><b>tc013_registerWithValidDetails</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_013 | Registration with valid details creates the account and signs in</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.tc015_registerWithEmptyForm()'><b>tc015_registerWithEmptyForm</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_015 | Registration without entering any details</td>
-<td></td>
-<td>2</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
-<tr>
-<td title='com.tta.bank.tests.TransactionsTests.extra_categoryFilterAndReset()'><b>extra_categoryFilterAndReset</b><br>Test class: com.tta.bank.tests.TransactionsTests<br>Test method: EXTRA | Category filter and Reset button</td>
-<td></td>
-<td>13</td>
-<td>com.tta.bank.tests.TransactionsTests@3bf7ca37</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.extra_cancelDoesNotDebit()'><b>extra_cancelDoesNotDebit</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: EXTRA | Cancel in the confirm dialog does not debit</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc004_unregisteredEmail()'><b>tc004_unregisteredEmail</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_004 | Unregistered Email Address with valid password</td>
-<td></td>
-<td>4</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc028_amountGreaterThanBalance()'><b>tc028_amountGreaterThanBalance</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_028 | Amount greater than the balance is refused</td>
-<td></td>
-<td>8</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -584,24 +329,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc031_balancePersistsAfterReload()'><b>tc031_balancePersistsAfterReload</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_031 | Balance and history persist after page reload</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.tta.bank.tests.SendMoneyTests.tc031_balancePersistsAfterReload(SendMoneyTests.java:181)
+<td title='com.tta.bank.tests.SessionAndUiTests.tc029_backAfterLogoutMustNotShowDashboard()'><b>tc029_backAfterLogoutMustNotShowDashboard</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: DEFECT | TC_029 | Browser Back after logout must not expose protected pages</td>
+<td><div><pre>java.lang.AssertionError: After logout, browser back must not show dashboard expected [https://app.thetestingacademy.com/playwright/tta-bank/] but found [https://app.thetestingacademy.com/playwright/tta-bank/dashboard]
+	at com.tta.bank.tests.SessionAndUiTests.tc029_backAfterLogoutMustNotShowDashboard(SessionAndUiTests.java:37)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1938074822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1938074822'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace655815958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace655815958'><pre>java.lang.AssertionError: After logout, browser back must not show dashboard expected [https://app.thetestingacademy.com/playwright/tta-bank/] but found [https://app.thetestingacademy.com/playwright/tta-bank/dashboard]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1067)
-	at org.testng.Assert.assertEquals(Assert.java:1031)
-	at org.testng.Assert.assertEquals(Assert.java:1077)
-	at com.tta.bank.tests.SendMoneyTests.tc031_balancePersistsAfterReload(SendMoneyTests.java:181)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.tta.bank.tests.SessionAndUiTests.tc029_backAfterLogoutMustNotShowDashboard(SessionAndUiTests.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -619,23 +362,23 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>8</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
+<td>5</td>
+<td>com.tta.bank.tests.SessionAndUiTests@f5958c9</td></tr>
 <tr>
-<td title='com.tta.bank.tests.SendMoneyTests.tc021_successfulTransfer()'><b>tc021_successfulTransfer</b><br>Test class: com.tta.bank.tests.SendMoneyTests<br>Test method: TC_021 | Successful transfer of Rs 500 reduces the balance by Rs 500</td>
-<td><div><pre>java.lang.AssertionError: Success message should be displayed expected [true] but found [false]
-	at com.tta.bank.tests.SendMoneyTests.tc021_successfulTransfer(SendMoneyTests.java:53)
+<td title='com.tta.bank.tests.LoginTests.defect_passwordUnmaskToggleMissing()'><b>defect_passwordUnmaskToggleMissing</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_034 | Password show/hide (unmask) toggle should exist</td>
+<td><div><pre>java.lang.AssertionError: Expected a show/hide password control (sheet: &apos;Password should be displayed in masked and Unmasked format&apos;) expected [true] but found [false]
+	at com.tta.bank.tests.LoginTests.defect_passwordUnmaskToggleMissing(LoginTests.java:144)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2085496925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2085496925'><pre>java.lang.AssertionError: Success message should be displayed expected [true] but found [false]
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace695210014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace695210014'><pre>java.lang.AssertionError: Expected a show/hide password control (sheet: &apos;Password should be displayed in masked and Unmasked format&apos;) expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.tta.bank.tests.SendMoneyTests.tc021_successfulTransfer(SendMoneyTests.java:53)
+	at com.tta.bank.tests.LoginTests.defect_passwordUnmaskToggleMissing(LoginTests.java:144)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -653,146 +396,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>16</td>
-<td>com.tta.bank.tests.SendMoneyTests@7c6908d7</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.tc043_sessionPersistsAfterReload()'><b>tc043_sessionPersistsAfterReload</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: TC_043 | Session survives a page reload</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.tta.bank.tests.SessionAndUiTests.tc043_sessionPersistsAfterReload(SessionAndUiTests.java:52)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1051953542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1051953542'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.tta.bank.tests.SessionAndUiTests.tc043_sessionPersistsAfterReload(SessionAndUiTests.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>7</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
-<tr>
-<td title='com.tta.bank.tests.LoginTests.tc010_openAnAccountLink()'><b>tc010_openAnAccountLink</b><br>Test class: com.tta.bank.tests.LoginTests<br>Test method: TC_010 | 'Open an account' link opens the registration page</td>
-<td><div><pre>java.lang.AssertionError: URL should be register.html expected [true] but found [false]
-	at com.tta.bank.tests.LoginTests.tc010_openAnAccountLink(LoginTests.java:120)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1506322704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1506322704'><pre>java.lang.AssertionError: URL should be register.html expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.tta.bank.tests.LoginTests.tc010_openAnAccountLink(LoginTests.java:120)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>3</td>
-<td>com.tta.bank.tests.LoginTests@2d1ef81a</td></tr>
-<tr>
-<td title='com.tta.bank.tests.SessionAndUiTests.extra_sidebarNavigation()'><b>extra_sidebarNavigation</b><br>Test class: com.tta.bank.tests.SessionAndUiTests<br>Test method: EXTRA | Sidebar navigation reaches every page</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.tta.bank.tests.SessionAndUiTests.extra_sidebarNavigation(SessionAndUiTests.java:128)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2025498658", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2025498658'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.tta.bank.tests.SessionAndUiTests.extra_sidebarNavigation(SessionAndUiTests.java:128)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>7</td>
-<td>com.tta.bank.tests.SessionAndUiTests@79079097</td></tr>
-<tr>
-<td title='com.tta.bank.tests.RegistrationTests.tc017_registerWithDuplicateEmail()'><b>tc017_registerWithDuplicateEmail</b><br>Test class: com.tta.bank.tests.RegistrationTests<br>Test method: TC_017 | Registration with an already registered Email Address</td>
-<td><div><pre>java.lang.AssertionError: User should stay on registration page expected [true] but found [false]
-	at com.tta.bank.tests.RegistrationTests.tc017_registerWithDuplicateEmail(RegistrationTests.java:93)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace490236306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace490236306'><pre>java.lang.AssertionError: User should stay on registration page expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.tta.bank.tests.RegistrationTests.tc017_registerWithDuplicateEmail(RegistrationTests.java:93)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>9</td>
-<td>com.tta.bank.tests.RegistrationTests@3857f613</td></tr>
+<td>5</td>
+<td>com.tta.bank.tests.LoginTests@5b7a5baa</td></tr>
 </table><p>
 </body>
 </html>

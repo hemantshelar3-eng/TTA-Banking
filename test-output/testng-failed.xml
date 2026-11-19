@@ -13,36 +13,20 @@
       </run>
     </groups>
     <classes>
-      <class name="com.tta.bank.tests.RegistrationTests">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="tc017_registerWithDuplicateEmail"/>
-        </methods>
-      </class> <!-- com.tta.bank.tests.RegistrationTests -->
       <class name="com.tta.bank.tests.LoginTests">
         <methods>
           <include name="setUp"/>
+          <include name="defect_passwordUnmaskToggleMissing"/>
           <include name="tearDown"/>
-          <include name="tc010_openAnAccountLink"/>
         </methods>
       </class> <!-- com.tta.bank.tests.LoginTests -->
       <class name="com.tta.bank.tests.SessionAndUiTests">
         <methods>
-          <include name="extra_sidebarNavigation"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="tc043_sessionPersistsAfterReload"/>
+          <include name="tc029_backAfterLogoutMustNotShowDashboard"/>
         </methods>
       </class> <!-- com.tta.bank.tests.SessionAndUiTests -->
-      <class name="com.tta.bank.tests.SendMoneyTests">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="tc021_successfulTransfer"/>
-          <include name="tc031_balancePersistsAfterReload"/>
-        </methods>
-      </class> <!-- com.tta.bank.tests.SendMoneyTests -->
     </classes>
   </test> <!-- TTA Bank - UI Regression(failed) -->
 </suite> <!-- Failed suite [TTA Bank Regression] -->
